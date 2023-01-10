@@ -10,18 +10,18 @@ public class VoitureFreinFoucault extends VoitureMontee{
     }
 
     public int getFreinage() {
-        return 1;
+        return 1 + voiture.getFreinage();
     }
 
     public int getMasse() {
-        return 2;
+        return 2 + voiture.getMasse();
     }
 
     public int getPrix() {
-        return 500;
+        return 500 + voiture.getPrix();
     }
 
     public String toString() {
-        return ", frein foucault" + super.toString();
+        return voiture.toString() + ", frein foucault";
     }
 }

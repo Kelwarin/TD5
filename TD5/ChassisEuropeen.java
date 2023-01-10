@@ -1,6 +1,6 @@
 package TD5;
 
-public class Chassis implements Voiture{
+public class ChassisEuropeen {
     public int getAcceleration() {
         return 0;
     }
@@ -10,14 +10,14 @@ public class Chassis implements Voiture{
     }
 
     public int getMasse() {
-        return 700;
+        return 1000;
     }
 
     public int getPrix() {
-        return 3000;
+        return 5000;
     }
 
     public String toString() {
-        return ", chassis";
+        return ", chassis Européen";
     }
 }

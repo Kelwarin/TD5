@@ -6,7 +6,7 @@ public class VoitureMoteurEssence extends VoitureMontee {
     }
 
     public int getAcceleration() {
-        return 115;
+        return 115 + voiture.getAcceleration();
     }
 
     public int getFreinage() {
@@ -14,7 +14,7 @@ public class VoitureMoteurEssence extends VoitureMontee {
     }
 
     public int getMasse() {
-        return 300;
+        return 300 + voiture.getMasse();
     }
 
     public int getPrix() {
@@ -22,6 +22,6 @@ public class VoitureMoteurEssence extends VoitureMontee {
     }
 
     public String toString() {
-        return ", moteur à essence" + super.toString();
+        return voiture.toString() + ", moteur à essence";
     }
 }

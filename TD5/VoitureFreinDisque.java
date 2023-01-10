@@ -10,18 +10,18 @@ public class VoitureFreinDisque extends VoitureMontee{
     }
 
     public int getFreinage() {
-        return 8;
+        return 8 + voiture.getFreinage();
     }
 
     public int getMasse() {
-        return 3;
+        return 3 + voiture.getMasse();
     }
 
     public int getPrix() {
-        return 150;
+        return 150 + voiture.getPrix();
     }
 
     public String toString() {
-        return ", frein disque" + super.toString();
+        return voiture.toString() + ", frein disque";
     }
 }

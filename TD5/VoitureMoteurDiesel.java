@@ -6,7 +6,7 @@ public class VoitureMoteurDiesel extends VoitureMontee {
     }
 
     public int getAcceleration() {
-        return 150;
+        return 150 + voiture.getAcceleration();
     }
 
     public int getFreinage() {
@@ -14,14 +14,14 @@ public class VoitureMoteurDiesel extends VoitureMontee {
     }
 
     public int getMasse() {
-        return 500;
+        return 500 + voiture.getMasse();
     }
 
     public int getPrix() {
-        return voiture.getAcceleration();
+        return voiture.getPrix();
     }
 
     public String toString() {
-        return ", moteur diesel" + super.toString();
+        return voiture.toString() + ", moteur diesel";
     }
 }

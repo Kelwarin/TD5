@@ -8,6 +8,6 @@ public abstract class VoitureMontee implements Voiture{
     }
 
     public String toString() {
-        return voiture.toString();
+        return "voiture" + voiture.toString();
     }
 }
